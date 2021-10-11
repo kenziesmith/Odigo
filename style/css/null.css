@@ -1,0 +1,29 @@
+/* Обнуляющие стили */
+*, 
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: 'Lato Medium', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+ul,
+li {
+    list-style: none;
+}
+/* Прижимаем подвал к низу страницы */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
